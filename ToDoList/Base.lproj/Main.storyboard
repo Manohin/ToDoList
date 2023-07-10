@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="UXW-wL-Jh9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="task" id="UXW-wL-Jh9">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UXW-wL-Jh9" id="65p-eD-j0c">
@@ -32,6 +32,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="ToDoList" id="5MD-a9-JSx">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="cKy-tb-0If">
+                            <connections>
+                                <action selector="removeAllTasks:" destination="goM-92-waw" id="vCM-11-AQo"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="SOV-TE-ucm">
                             <connections>
                                 <action selector="createTaskButtonTapped:" destination="goM-92-waw" id="JZJ-Bc-HEo"/>
